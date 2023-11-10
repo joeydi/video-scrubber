@@ -85,14 +85,12 @@ function App() {
     });
 
     return (
-        <main style={{ backgroundColor: mouseDownRef.current ? "red" : "black" }}>
+        <main onClick={() => setMouseDown(!mouseDown)}>
             <video
                 ref={videoRef}
                 src="https://simple-creature-website-assets.s3.amazonaws.com/video-scrubber/feature-2-video-demo-matcap-trim-1k.mp4"
                 muted
                 loop
-                onMouseDown={() => setMouseDown(true)}
-                onMouseUp={() => setMouseDown(false)}
             />
         </main>
     );
