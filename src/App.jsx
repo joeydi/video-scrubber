@@ -26,7 +26,7 @@ const useAnimationFrame = (callback) => {
 
 function App() {
     const videoRef = useRef();
-    const baseTimeFactor = 1.25;
+    const baseTimeFactor = 1.5;
     const timeFactor = useRef(1);
     const scrollDelta = useRef(0);
     const scrollDirection = useRef(baseTimeFactor);
