@@ -67,7 +67,6 @@ function App() {
     }, []);
 
     useAnimationFrame((deltaTime) => {
-        console.log(mouseDownRef.current, scrollDelta.current);
         const timeInput = (deltaTime / 1000) * scrollDirection.current * timeFactor.current;
         const scrollInput = scrollDelta.current / 1000;
 
